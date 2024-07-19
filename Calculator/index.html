@@ -1,1 +1,49 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="calculator">
+        <form name="calculatorForm">
+            <div class="display">
+                <input type="text" name="display" id="display" readonly>
+            </div>
+            <div>
+                <input type="button" value="AC" onclick="clearDisplay()" class="operator">
+                <input type="button" value="DEL" onclick="deleteChar()" class="operator">
+                <input type="button" value="." onclick="appendChar('.')" class="operator">
+                <input type="button" value="/" onclick="appendChar('/')" class="operator">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="appendChar('7')">
+                <input type="button" value="8" onclick="appendChar('8')">
+                <input type="button" value="9" onclick="appendChar('9')">
+                <input type="button" value="*" onclick="appendChar('*')" class="operator">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="appendChar('4')">
+                <input type="button" value="5" onclick="appendChar('5')">
+                <input type="button" value="6" onclick="appendChar('6')">
+                <input type="button" value="-" onclick="appendChar('-')" class="operator">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="appendChar('1')">
+                <input type="button" value="2" onclick="appendChar('2')">
+                <input type="button" value="3" onclick="appendChar('3')">
+                <input type="button" value="+" onclick="appendChar('+')" class="operator">
+            </div>
+            <div>
+                <input type="button" value="00" onclick="appendChar('00')">
+                <input type="button" value="0" onclick="appendChar('0')">
+                <input type="button" value="=" onclick="calculate()" class="equal operator">
+            </div>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
